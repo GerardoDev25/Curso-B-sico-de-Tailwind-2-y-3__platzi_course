@@ -4,7 +4,7 @@
   "description": "Curso Básico de Tailwind 2 y 3(curso de platzi)",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/style/main.css -o ./public/css/main.css --watch"
+    "dev": "tailwindcss -i ./src/style/main.css -o ./public/css/main.css --watch"
   },
   "repository": {
     "type": "git",
