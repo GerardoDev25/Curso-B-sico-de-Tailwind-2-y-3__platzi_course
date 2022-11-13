@@ -682,6 +682,19 @@ video {
   outline-offset: 2px;
 }
 
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
 .Card {
   height: 16rem;
   width: 12rem;
