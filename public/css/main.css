@@ -603,6 +603,14 @@ video {
   background-image: url("../img/norway.jpg");
 }
 
+.bg-new_york {
+  background-image: url("../img/new_york.jpg");
+}
+
+.bg-yosemite {
+  background-image: url("../img/yosemite.jpg");
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -672,4 +680,60 @@ video {
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.Card {
+  height: 16rem;
+  width: 12rem;
+  flex: none;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.Card--cover {
+  height: 60%;
+  width: 100%;
+  background-size: cover;
+}
+
+.Card--info {
+  height: 40%;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(143 162 6 / var(--tw-bg-opacity));
+}
+
+.Card--info__title {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.Card--info__subtitle {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.Card:nth-child(even) .Card--info {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.Card:nth-child(even) .Card--info__title,
+.Card:nth-child(even) .Card--info__subtitle {
+  --tw-text-opacity: 1;
+  color: rgb(97 174 201 / var(--tw-text-opacity));
 }
